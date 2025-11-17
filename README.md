@@ -1,6 +1,7 @@
 # RPN Calculator (Java) — numero2
 
 A Reverse Polish Notation (postfix) calculator. It evaluates expressions using a stack (push numbers, apply operators).
+I made it so i can solve correct problems that my uni gave
 
 ## Build and Run (generic)
 ```bash
