@@ -1,18 +1,27 @@
-## Getting Started
+# RPN Calculator (Java) — numero2
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+A Reverse Polish Notation (postfix) calculator. It evaluates expressions using a stack (push numbers, apply operators).
 
-## Folder Structure
+## Build and Run (generic)
+```bash
+# Compile
+javac -d bin $(find src -name "*.java")
 
-The workspace contains two folders by default, where:
+# Run (replace Main with your actual main class)
+java -cp bin Main
+```
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Examples
+```text
+# (3 + 4) * 2 / 7
+3 4 + 2 * 7 /   =&gt; 2
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+# 5 + ((1 + 2) * 4) - 3
+5 1 2 + 4 * + 3 -   =&gt; 14
+```
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## Ideas / Next steps
+- More operators: power (^), unary negation, sqrt
+- Input validation and helpful error messages
+- REPL mode and file input
+- Unit tests
